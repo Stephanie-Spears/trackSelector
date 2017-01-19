@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <title>TRACK SELECTOR</title>
     <script src="js/jQuery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/myScripts.js"></script>
@@ -8,23 +10,29 @@
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
     <link href="css/myStyles.css" type="text/css" rel="stylesheet" media="all">
 
-    <title>TRACK SELECTOR</title>
   </head>
 
   <body>
     <div class="container">
       <h1>Track Selector Help</h1>
-      <p>Here's a track selector.</p>
+      <p>Here some information about the different tracks!</p>
 
-      <div class="track-entry">
-        <h3><span class = "clickable"></span></h3>
-        <div class = "track-details">
-          <p></p>
-          <span class = "clickable"></span>
-        </div>
-      </div>
-      <!-- <img src="img/discreteStruct.jpg" alt="discrete mathmatics visualized">
-    </div> -->
+      <div class="trackEntry">
+        <a id="titleButton" class="HTMLtrackTitle" href="#">%HTMLtrackTitle%</a>
+        <div id="trackDetails" class="HTMLtrackDetails">%HTMLtrackDetails%</div>
+      </div><!--end trackEntry div -->
+
+      <div class="tracksForm">
+        <p id="formButton"><strong>Take a Helper-Quiz!</strong></p>
+        <div class="myBlankForm">
+
+        </div><!-- end tracksForm div -->
+      </div><!-- end blankForm div -->
+    </div><!-- end container div -->
+
+    <div class="footer">
+      <h3>Good Luck!</h3>
+    </div><!--end footer div -->
 
   </body>
 </html>
