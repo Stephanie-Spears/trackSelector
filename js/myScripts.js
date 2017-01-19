@@ -46,6 +46,19 @@ var epicodusTracks = [
   }
 ];
 
+// $(function() {
+//   $("#myTitleButton").append("%HTMLtrackTitle%", epicodusTracks[0].title);
+// }
+
+
+
+// NOTE: i WANT TO MAKE A FUNCTION THAT'LL PUSH THE DATA HERE INTO SEVERAL INSTANCES OF THE "trackEntry" div inside the main HTML.
+// for (var i = 0; i < epicodusTracks; i++)
+// {
+//
+// }
+
+
 $(function() {
     $( "#myTitleButton" ).click(function() {
         $( "#myTrackDetails" ).toggle();

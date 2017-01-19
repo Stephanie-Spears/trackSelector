@@ -14,22 +14,79 @@
 
   <body>
     <div class="container">
+
       <header class="header">
         <h1>Track Selector Help</h1>
         <p>Here is some information about the different tracks!</p>
       </header><!--end header div -->
 
-      <div class="trackEntry">
-        <a id="myTitleButton" class="HTMLtrackTitle" href="#">%HTMLtrackTitle%</a>
-        <div id="myTrackDetails" class="HTMLtrackDetails">%HTMLtrackDetails%</div>
-      </div><!--end trackEntry div -->
+      <div class="content">
 
-      <div class="myTracksForm">
-        <p id="myFormButton"><strong>Take a Helper-Quiz!</strong></p>
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Collapsible Group Item #1
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Collapsible Group Item #2
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Collapsible Group Item #3
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <h2><p id="myFormButton"><strong>Take a Helper-Quiz!</strong></p></h2>
         <div class="myBlankForm">
+          <div class="radio">
+            <label><input type="radio" name="optradio">A) Would you like to work for an Enterprise-level company?</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="optradio">B) Would you like to work with front-end?</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="optradio">C) Would you prefer to work with content-heavy websites with very little user interaction?</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="optradio">D) Would you prefer to write interactive web applications?</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="optradio">E) Would you prefer to work with a high-demand language, like Java?</label>
+          </div>
 
-        </div><!-- end tracksForm div -->
       </div><!-- end blankForm div -->
+    </div> <!-- end content div -->
 
       <footer class="footer">
         <h3>Good Luck!</h3>

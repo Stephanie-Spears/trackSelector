@@ -12,19 +12,21 @@
   background: linear-gradient(180, yellow, red);
 }
 
+/* NOTE: for stickfooter--the following html, body, and container */
+html {
+  height: 100%;
+}
 body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
   background-repeat: no-repeat;
   background-image: url("../img/cloudsPhoto.jpg");
   background-position: center;
-  width: 100%;
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
 }
-
-/*div.container {
-  width: 100%;
-  line-height: 150%;
-}*/
+.content {
+  flex: 1; /*use this on the child we want to grow to eventually fill the space with content*/
+}
 
 header, footer {
   color: #edf3ff;
@@ -34,9 +36,8 @@ header, footer {
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
+  clear:both;
   /* Set the fixed height of the footer here */
   height: 60px;
   background-color: aquamarine;
@@ -48,7 +49,8 @@ div.trackEntry {
 }
 
 #myTitleButton{
-  /* NOTE:  */
+  color: #4286f4;
+  font-weight: bold;
 }
 
 #myTrackDetails {
@@ -65,14 +67,14 @@ div.HTMLtrackDetails {
   /* NOTE:  */
 }
 
-div.myTracksForm {
-/* NOTE:  */
-}
 
 #myFormButton {
-  /* NOTE:  */
+  color: orange;
 }
+#myFormButton :hover {
+  color: orange;
 
+}
 div.myBlankForm {
   /* NOTE:  */
 }
