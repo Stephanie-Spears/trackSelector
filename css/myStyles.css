@@ -16,37 +16,21 @@ body {
   background-repeat: no-repeat;
   background-image: url("../img/cloudsPhoto.jpg");
   background-position: center;
-  background-size: cover;
-}
-
-.container {
   width: 100%;
-  margin: 0em;
-  padding: 0em;
-  line-height: 150%;
-}
-
-div.header, div.footer {
-  color: #edf3ff;
-  padding: 0em;
-  margin: 0em;
-  clear: left;
-  text-align: center;
-}
-
-footer {
-  background-image: url("../img/discreteStruct.jpg");
-  border: 3px solid #f5ffa0;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+}
+
+/*div.container {
+  width: 100%;
+  line-height: 150%;
+}*/
+
+header, footer {
+  color: #edf3ff;
+  clear: left;
+  text-align: center;
+  background-color: lightgreen;
 }
 
 .footer {
@@ -55,14 +39,45 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #f5f5f5;
+  background-color: aquamarine;
   text-align: center;
 }
 
-div.track-details {
+div.trackEntry {
+  /* NOTE:  */
+}
+
+#myTitleButton{
+  /* NOTE:  */
+}
+
+#myTrackDetails {
+  color: purple;
   font-weight: bold;
   display: none;
 }
+
+a.HTMLtrackTitle {
+  /* NOTE:  */
+}
+
+div.HTMLtrackDetails {
+  /* NOTE:  */
+}
+
+div.myTracksForm {
+/* NOTE:  */
+}
+
+#myFormButton {
+  /* NOTE:  */
+}
+
+div.myBlankForm {
+  /* NOTE:  */
+}
+
+
 
 @media screen and (min-width: 768px) {
   .column {

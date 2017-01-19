@@ -47,14 +47,14 @@ var epicodusTracks = [
 ];
 
 $(function() {
-    $( "#titleButton" ).click(function() {
-        $( "#trackDetails" ).toggle();
+    $( "#myTitleButton" ).click(function() {
+        $( "#myTrackDetails" ).toggle();
     });
 });
 
 $(function() {
-    $( "#formButton" ).click(function() {
-        $( "#blankForm" ).toggle();
+    $( "#myFormButton" ).click(function() {
+        $( "#myBlankForm" ).toggle();
     });
 });
 
