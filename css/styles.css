@@ -1,5 +1,15 @@
 * {
   box-sizing: border-box;
+  border-radius: 10px;
+}
+
+* :hover {
+  border-radius: 20px;
+  border-style: double;
+}
+
+* :active {
+  background: linear-gradient(320deg, red, yellow);
 }
 
 body {
