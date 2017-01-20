@@ -48,6 +48,31 @@ div.trackEntry {
   /* NOTE:  */
 }
 
+#myTrackTitle1,
+#myTrackTitle2,
+#myTrackTitle3,
+#myTrackTitle4,
+#myTrackTitle5 {
+  color: black;
+  font-weight: bold;
+}
+#myTrackDetails1,
+#myTrackDetails2,
+#myTrackDetails3,
+#myTrackDetails4,
+#myTrackDetails5 {
+  color: grey;
+  font-weight: bold;
+}
+#myLink1,
+#myLink2,
+#myLink3,
+#myLink4,
+#myLink5 {
+  color: blue;
+  font-weight: bold;
+}
+
 #myTitleButton{
   color: #4286f4;
   font-weight: bold;
@@ -58,15 +83,6 @@ div.trackEntry {
   font-weight: bold;
   display: none;
 }
-
-a.HTMLtrackTitle {
-  /* NOTE:  */
-}
-
-div.HTMLtrackDetails {
-  /* NOTE:  */
-}
-
 
 #myFormButton {
   color: orange;
