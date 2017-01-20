@@ -58,7 +58,19 @@ _copyright and license information_
 
 ## Known Bugs
 
-__
+_Currently Incomplete_
+
+_major:_
+
+_haven't gotten to branching and returning a response for the user input data_
+_need to create + implement functions for optimizing repetitive structures (i.e. loop titles and descriptions sections to input data from the stored array)_
+
+_minor:_
+_userInputValidation function allows for floating point--setPrecision_
+_Sticky-Footer not displaying correctly_
+_unnecssary variables/functions/comments_
+_sloppy CSS/formatting_
+
 
 ## Support and contact details
 
