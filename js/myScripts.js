@@ -103,3 +103,90 @@ $(function() {
 //     alert("This is a header.");
 //   });
 // });
+
+
+
+
+var getInput = function() {
+  var getChoice = parseInt(prompt("Choose operation by index option. \n1. + \n2. - \n3. / \n4. * \n"));
+  var getNumber1 = parseInt(prompt("Enter first number:"));
+  var getNumber2 = parseInt(prompt("Enter second number: "));
+  return [getChoice, getNumber1, getNumber2];
+};
+
+var userInputArray = getInput();
+var userChoice = userInputArray[0];
+var num1= userInputArray[1];
+var num2= userInputArray[2];
+var lowRange = 1;
+var highRange = 4;
+var calculateNum = [
+  function (num1, num2) {return num1 + num2;},
+  function (num1, num2) {return num1 - num2;},
+  function (num1, num2) {return num1 / num2;},
+  function (num1, num2) {return num1 * num2;},
+];
+
+
+// NOTE: FOLLOWING IS FROM OUR MATH PROJECT, HASN'T BEEN FORMATTED FOR STRING YET...actually I bet there's probably an easier way to do this...like num1.isAlpha()...check...
+
+// input allows for decimals (ie. 1.2 is accepted. Specify non-floating point? setPrecision funct?)
+// Should make it immediately check input and only store the int in the array if it's valid...return false immediately, so user doesn't have to go through the motions of finishing input if the first num is wrong
+function checkInput(userInputArray) {
+  for (var i = 0; i < userInputArray.length; i++) {
+    if (isNaN(userInputArray[i])) {
+      alert("user input of'" + userInputArray[i] + "[" + i + "]" + "' is NOT a NUMBER");
+      return false;
+    }
+    else if (i === 0) {
+      if (lowRange > userInputArray[i] || userInputArray[i] > highRange) {
+        alert("user input of ''" + userInputArray[i] + "' is not within options range of " + lowRange + " and " + highRange);
+        return false;
+      }
+    }
+    // alert("Each item in the array has been validated");
+    else if (i === (userInputArray.length - 1)) {
+      return true;
+    }
+  }
+}
+
+var cleanInput = checkInput(userInputArray);
+
+while (cleanInput === false) {
+  alert("invalid choice. TRY AGAIN!");
+
+  var userInputArray = getInput();
+  var num1= userInputArray[1];
+  var num2= userInputArray[2];
+  var userChoice = userInputArray[0];
+  var cleanInput = checkInput(userInputArray);
+}
+if(cleanInput === true) {
+  // alert("User input has been validated");
+}
+var calcSymb = ["+", "-", "/", "*"];
+
+var displayCalcOperation = function (num1, num2) {
+  var numValue;
+  alert(num1 + calcSymb[userChoice-1] + num2 + " = " + (numValue = calculateNum[userChoice-1](num1, num2)));
+};
+
+displayCalcOperation(num1, num2);
+
+$(function() {
+    $( "#button1" ).click(function() {
+        $( "#item1" ).toggle();
+    });
+});
+
+$(function() {
+    $( "#button2" ).click(function() {
+        $( "#item2" ).toggle();
+    });
+});
+$(function() {
+    $( "#button3" ).click(function() {
+        $( "#item3" ).toggle();
+    });
+});
