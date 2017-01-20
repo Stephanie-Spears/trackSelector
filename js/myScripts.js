@@ -1,23 +1,4 @@
 
-// $(function() {
-//   $("h1").click(function() {
-//     alert("This is a header.");
-//   });
-//
-//   $(".clickable").click(function() {
-//     $(".track-details").toggle();
-//   });
-//
-//   for (var i = 0; i < epicodusTracks.length; i++) {
-//     for (var e = 0; e < epicodusTracks.tracks[e].length; e++) {}
-//     $(".track-entry").append(formattedEntries);
-//     var formattedEntries =
-//     $("h3 .clickable").append(epicodusTracks[i].title) +
-//     $(".track-details p").append(epicodusTracks[i].details) +
-//     $(".track-details").append(epicodusTracks[i].link);
-//   }
-// });
-
 var epicodusTracks = [
   {
     "title": "PHP/Drupal",
@@ -46,9 +27,41 @@ var epicodusTracks = [
   }
 ];
 
+for (var i = 0; i < epicodusTracks.length; i++) {
+  // document.getElementByClass("trackEntry").innerHTML;
+  alert(epicodusTracks[i].item);
+  alert(epicodusTracks[i].details);
+  alert(epicodusTracks[i].link);
+  document.getElementById("myTrackTitle1").innerHTML=epicodusTracks[i].title;
+  document.getElementById("myTrackDetails1").innerHTML=epicodusTracks[i].details;
+  document.getElementById("myLink1").innerHTML=epicodusTracks[i].link;
+  document.getElementById("myTrackTitle2").innerHTML=epicodusTracks[i].title;
+  document.getElementById("myTrackDetails2").innerHTML=epicodusTracks[i].details;
+  document.getElementById("myLink2").innerHTML=epicodusTracks[i].link;
+  document.getElementById("myTrackTitle2").innerHTML=epicodusTracks[i].title;
+  document.getElementById("myTrackDetails2").innerHTML=epicodusTracks[i].details;
+  document.getElementById("myLink2").innerHTML=epicodusTracks[i].link;
+}
+
+
 // $(function() {
-//   $("#myTitleButton").append("%HTMLtrackTitle%", epicodusTracks[0].title);
-// }
+//   $("h1").click(function() {
+//     alert("This is a header.");
+//   });
+//
+//   $(".clickable").click(function() {
+//     $(".track-details").toggle();
+//   });
+//
+//   for (var i = 0; i < epicodusTracks.length; i++) {
+//     for (var e = 0; e < epicodusTracks.tracks[e].length; e++) {}
+//     $(".track-entry").append(formattedEntries);
+//     var formattedEntries =
+//     $("h3 .clickable").append(epicodusTracks[i].title) +
+//     $(".track-details p").append(epicodusTracks[i].details) +
+//     $(".track-details").append(epicodusTracks[i].link);
+//   }
+// });
 
 
 
@@ -70,6 +83,8 @@ $(function() {
         $( "#myBlankForm" ).toggle();
     });
 });
+
+
 
 
 // $("div.my-menu").click(function() {
