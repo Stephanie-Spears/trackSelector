@@ -29,27 +29,37 @@ var epicodusTracks = [
 
 for (var i = 0; i < epicodusTracks.length; i++) {
   // for (var x = 0; x < epicodusTracks.length; x++)
-  document.getElementById("myTrackTitle1").innerHTML=epicodusTracks[i].title;
-  document.getElementById("myTrackDetails1").innerHTML=epicodusTracks[i].details;
-  document.getElementById("myLink1").innerHTML=epicodusTracks[i].link;
+  if (i === 0) {
+    document.getElementById("myTrackTitle1").innerHTML=epicodusTracks[i].title;
+    document.getElementById("myTrackDetails1").innerHTML=epicodusTracks[i].details;
+    document.getElementById("myLink1").innerHTML=epicodusTracks[i].link;
+  }
+  else if (i === 1) {
 
-  document.getElementById("myTrackTitle2").innerHTML=epicodusTracks[i].title;
-  document.getElementById("myTrackDetails2").innerHTML=epicodusTracks[i].details;
-  document.getElementById("myLink2").innerHTML=epicodusTracks[i].link;
 
-  document.getElementById("myTrackTitle3").innerHTML=epicodusTracks[i].title;
-  document.getElementById("myTrackDetails3").innerHTML=epicodusTracks[i].details;
-  document.getElementById("myLink3").innerHTML=epicodusTracks[i].link;
+    document.getElementById("myTrackTitle2").innerHTML=epicodusTracks[i].title;
+    document.getElementById("myTrackDetails2").innerHTML=epicodusTracks[i].details;
+    document.getElementById("myLink2").innerHTML=epicodusTracks[i].link;
+  }
 
-  document.getElementById("myTrackTitle4").innerHTML=epicodusTracks[i].title;
-  document.getElementById("myTrackDetails4").innerHTML=epicodusTracks[i].details;
-  document.getElementById("myLink4").innerHTML=epicodusTracks[i].link;
+  else if (i === 2) {
+    document.getElementById("myTrackTitle3").innerHTML=epicodusTracks[i].title;
+    document.getElementById("myTrackDetails3").innerHTML=epicodusTracks[i].details;
+    document.getElementById("myLink3").innerHTML=epicodusTracks[i].link;
+  }
 
-  document.getElementById("myTrackTitle5").innerHTML=epicodusTracks[i].title;
-  document.getElementById("myTrackDetails5").innerHTML=epicodusTracks[i].details;
-  document.getElementById("myLink5").innerHTML=epicodusTracks[i].link;
-
+  else if (i === 3) {
+    document.getElementById("myTrackTitle4").innerHTML=epicodusTracks[i].title;
+    document.getElementById("myTrackDetails4").innerHTML=epicodusTracks[i].details;
+    document.getElementById("myLink4").innerHTML=epicodusTracks[i].link;
+  }
+  else if (i === 4) {
+    document.getElementById("myTrackTitle5").innerHTML=epicodusTracks[i].title;
+    document.getElementById("myTrackDetails5").innerHTML=epicodusTracks[i].details;
+    document.getElementById("myLink5").innerHTML=epicodusTracks[i].link;
+  }
 }
+
 
 
 // $(function() {
